@@ -37,6 +37,8 @@ case 3:
     break;
 
 default:
+
+printf("OPÇÃO INVALIDA!");
     break;
 }
 
