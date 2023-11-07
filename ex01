@@ -14,9 +14,13 @@ scanf("%f",&temperatura);
 
 if (temperatura >= 25){
     printf("ensolarado!");
-}else if (temperatura <= 15 && 25) {
+}else if (temperatura <= 15 ) {
+    printf("chuvoso!");
+}
+else if (temperatura <= 15 && 25) {
     printf("nublado!");
 }
 
     return 0;
 }
+
