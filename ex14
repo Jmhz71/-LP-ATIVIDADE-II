@@ -19,27 +19,38 @@ int main()
         printf("Digite um número:");
         scanf("%d", &numero);
 
-        if (numero % 2 == 0)
+        if (numero % 2 == 0 && numero > 0)
         {
-            printf(" é par\n");
+          
             par++;  
             somapar += numero;
         }
-        else
+        else if (numero % 2 != 0 && numero > 0)
         {
-            printf("é ímpar\n");
             impar++;   
             somaimpar += numero;
         }
 
-    } while (numero >= 0);
-
+    } while (numero > 0);
+    
+    if(par >0){
+       printf("A média dos pares é:%f\n", mediapar);
     mediapar = somapar/par;
+    }else{
+        printf("não ha número par");
+    }if (impar > 0 ){
+         printf("A média dos ímpares é:%f\n", mediaimpar);
     mediaimpar = somaimpar/impar;
+    }else {
+        printf("não ha número impar ");
+    }
 
-    printf("Os números pares são:%d\n", somapar);
-    printf("Os números ímpares são:%d\n", somaimpar);
+
+    printf("Os números pares são:%d\n", par);
+    printf("Os números ímpares são:%d\n", impar);
     printf("A média dos pares é:%f\n", mediapar);
     printf("A média dos ímpares é:%f\n", mediaimpar);
+    
+    
     return 0;
 }
